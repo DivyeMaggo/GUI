@@ -1,0 +1,16 @@
+#frame,button
+from tkinter import *
+root=Tk()
+frame=Frame(root ,width=100,height=300)
+button1=Button(frame,text="button 1")
+button2=Button(frame,text="button 2")
+button3=Button(frame,text="button 3")
+button1.pack(side=LEFT)
+button2.pack(side=LEFT)
+button3.pack(side=LEFT)
+frame.pack()
+bottomframe=Frame(root)
+button4=Button(bottomframe,text="button4")
+button4.pack(side=BOTTOM)
+bottomframe.pack()
+root.mainloop()
